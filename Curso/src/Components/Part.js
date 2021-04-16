@@ -11,8 +11,6 @@ export default function Part({item}){
         <p>EJERCICIO: {item.exercises}</p>
 
       </div>
-
-    
   );
 
 }

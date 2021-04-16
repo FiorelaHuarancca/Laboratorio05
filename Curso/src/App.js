@@ -1,5 +1,6 @@
 import './App.css';
 import Course from './Components/Course';
+import Total from "./Components/Total";
 
 
 const App = () => {
@@ -25,6 +26,13 @@ const App = () => {
     ]
   }
 
-  return <Course course={course} />
+  return (
+    
+    <div>
+      <Course course={course} />
+      <Total parts={course.parts}/>
+    </div>
+  );
 }
+
 export default App;
